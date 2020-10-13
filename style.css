@@ -1,0 +1,54 @@
+/*---- index.html - stylesheet ----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display:none;
+}
+
+@media only screen and (max-width: 550px) {
+	.container {
+		display: flex;
+	}
+}
+
+.carousel-container {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+} 
+
+.carousel-slide {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+
+#prevBtn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 5%;
+	font-size: 30px;
+	color: #eeeeee;
+	cursor: crosshair;
+}
+
+#nextBtn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 5%;
+	font-size: 30px;
+	color: #eeeeee;
+	cursor: crosshair;
+}
